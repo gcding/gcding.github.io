@@ -1,7 +1,12 @@
 ---
-title: Hello World
+title: Git学习
 ---
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容
+- Git学习资料
+- Git重要命令行
+- Git重要知识点
+- Git多人协同开发与branch
+
 
 ## Quick Start
 
