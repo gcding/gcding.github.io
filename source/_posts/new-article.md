@@ -5,11 +5,11 @@ tags:
 - Hexo
 - try on hexo
 categories:
-- iip try
+- iip
 comments: true
 ---
 Welcome to [IIP](http://iip.whu.edu.cn/)! 
-欢迎前往 [IIP](http://iip.whu.edu.cn/)官网
+欢迎前往 [IIP](http://iip.whu.edu.cn/)官网。
 
 ## Hexo
 第一次尝试使用Hexo建站，感觉还可以，本条博文留着用来记录我在搭建博客过程中的问题，流程预计如下：
