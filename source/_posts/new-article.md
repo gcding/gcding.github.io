@@ -19,3 +19,4 @@ Welcome to [IIP](http://iip.whu.edu.cn/)!
 - Hexo部署
 
 ## 想办法弄到最上面去
+[self-Attention and Transformer](https://luweikxy.gitbook.io/machine-learning-notes/self-attention-and-transformer#Self-Attention%E6%9C%BA%E5%88%B6)
