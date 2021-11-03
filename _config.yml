@@ -98,6 +98,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+# menu:
+#   home: /
+#   archives: /archives
+#   about: /about
+#   #categories: /categories
+#   tags: /tags
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

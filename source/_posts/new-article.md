@@ -3,7 +3,6 @@ title: IIP
 date: 2021-11-02 19:53:24
 tags: 
 - Hexo
-- try on hexo
 categories:
 - iip
 comments: true
@@ -18,3 +17,5 @@ Welcome to [IIP](http://iip.whu.edu.cn/)!
 - Hexo的安装与使用
 - GitHub部署
 - Hexo部署
+
+## 想办法弄到最上面去
