@@ -14,7 +14,33 @@ Welcome to [IIP](http://iip.whu.edu.cn/)!
 第一次尝试使用Hexo建站，感觉还可以，本条博文留着用来记录我在搭建博客过程中的问题，流程预计如下：
 - node + nvm
 - git 
+代码已经被托管到GitHub上，其中main（主分支）分支是托管编译后的界面页面，gh-dev分支托管的是源码。
+主分支配置已经写好在 _config.yml 中 每次写完只需要运行以下三行命令即可
+``` bash
+$ hexo clean
+$ hexo g
+$ hexo d
+```
+对于源码部分因为我是两台机器同时写源码，所以由以下操作：
+如果是新机器需要下载源码：
+``` bash
+$ git clone -b "分支名" "仓库名"
+```
+提交：
+``` bash
+$ git add "修改的文件名"
+$ git commit -m "一些描述"
+$ git push origin "分支名"
+```
+每次修改前都要去GitHub上拉取最新的版本
+``` bash
+$ git pull origin "分支名"
+```
+
 - Hexo的安装与使用
+我自己准备尝试修改的Hexo的NexT主题设置：
+[NexT主题官方文档](https://theme-next.iissnan.com/getting-started.html)
+[NexT主题设置-博客1](https://blog.csdn.net/as480133937/article/details/100138838)
 - GitHub部署
 - Hexo部署
 
