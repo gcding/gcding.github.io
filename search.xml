@@ -36,30 +36,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>hexo写博客</title>
-    <url>/2022/04/01/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<p>Hexo 写博客可以理解为写遵从Hexo博客规范的Markdown（其实也没啥规范），下面以写此博客为例简述如何在配置好hexo和next的情况下写博客。</p>
-<h2 id="新建文档"><a href="#新建文档" class="headerlink" title="新建文档"></a>新建文档</h2><p>新建文档，名字为：hexo写博客：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;hexo写博客&quot;</span></span><br></pre></td></tr></table></figure>
-<p>上述命令会在<code>~/source/_posts</code>下创建一个<code>hexo写博客.md</code>文件，你可以自由移动到<code>_post</code>下你自己创建的文件夹下面。</p>
-<p>我本人是使用VsCode的，所以直接打开即可编辑，你也可以用自己觉得舒服的编辑器进行编辑。</p>
-<h2 id="文档格式"><a href="#文档格式" class="headerlink" title="文档格式"></a>文档格式</h2><p>文档格式在~/scaffolds/post.md里面定义，以下是我的定义方式：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-
-<p>在生成文档后我们就可以在<code>---</code>后面愉快的写博客内容了（Markdown语法）。</p>
-<h2 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h2><p>为了避免不必要的错误，在生成静态文件前，强烈建议先运行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
-
-<p>然后按照之前本地调试的方法进行调试，调试无误后提交即可。</p>
-]]></content>
-      <categories>
-        <category>开发</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>建站记录</title>
     <url>/2021/11/02/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo+next%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>第一次尝试使用Hexo建站，感觉还可以，本条博文留着用来记录我在搭建博客过程中的问题，流程预计如下：</p>
@@ -93,6 +69,30 @@
       <tags>
         <tag>hexo</tag>
         <tag>next</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hexo写博客</title>
+    <url>/2022/04/01/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo%E5%86%99%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<p>Hexo 写博客可以理解为写遵从Hexo博客规范的Markdown（其实也没啥规范），下面以写此博客为例简述如何在配置好hexo和next的情况下写博客。</p>
+<h2 id="新建文档"><a href="#新建文档" class="headerlink" title="新建文档"></a>新建文档</h2><p>新建文档，名字为：hexo写博客：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;hexo写博客&quot;</span></span><br></pre></td></tr></table></figure>
+<p>上述命令会在<code>~/source/_posts</code>下创建一个<code>hexo写博客.md</code>文件，你可以自由移动到<code>_post</code>下你自己创建的文件夹下面。</p>
+<p>我本人是使用VsCode的，所以直接打开即可编辑，你也可以用自己觉得舒服的编辑器进行编辑。</p>
+<h2 id="文档格式"><a href="#文档格式" class="headerlink" title="文档格式"></a>文档格式</h2><p>文档格式在~/scaffolds/post.md里面定义，以下是我的定义方式：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories: </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<p>在生成文档后我们就可以在<code>---</code>后面愉快的写博客内容了（Markdown语法）。</p>
+<h2 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h2><p>为了避免不必要的错误，在生成静态文件前，强烈建议先运行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+
+<p>然后按照之前本地调试的方法进行调试，调试无误后提交即可。</p>
+]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
