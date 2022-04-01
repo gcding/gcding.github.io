@@ -8,7 +8,7 @@ subtitle: ''
 description: ''
 keywords:
 author: Guanchen Ding
-language: zh-Hans
+language: zh-CN
 timezone: ''
 
 # URL
@@ -98,12 +98,12 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
-# menu:
-#   home: /
-#   archives: /archives
-#   about: /about
-#   #categories: /categories
-#   tags: /tags
+menu:
+  home: /
+  archives: /archives
+  about: /about
+  categories: /categories
+  tags: /tags
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -111,3 +111,9 @@ deploy:
   type: git
   repo: git@github.com:gcding/gcding.github.io.git
   branch: main
+# search settings
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
