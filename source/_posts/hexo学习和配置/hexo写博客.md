@@ -1,6 +1,7 @@
 ---
 title: hexo写博客
 date: 2022-04-01 11:21:34
+updated: 2022-04-02 11:22:22
 tags: 
 - hexo
 categories: 

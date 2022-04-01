@@ -112,6 +112,7 @@ deploy:
   repo: git@github.com:gcding/gcding.github.io.git
   branch: main
 # search settings
+
 search:
   path: search.xml
   field: post
