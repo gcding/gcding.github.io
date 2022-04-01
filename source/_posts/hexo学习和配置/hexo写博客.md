@@ -1,11 +1,12 @@
 ---
 title: hexo写博客
 date: 2022-04-01 11:21:34
-updated: 2022-04-02 11:22:22
+updated: 2022-04-01
 tags: 
 - hexo
 categories: 
 - 开发
+description: 点击详情查看如何新建第一个自己的博客
 ---
 
 Hexo 写博客可以理解为写遵从Hexo博客规范的Markdown（其实也没啥规范），下面以写此博客为例简述如何在配置好hexo和next的情况下写博客。
@@ -39,3 +40,38 @@ $ hexo clean
 ```
 
 然后按照之前本地调试的方法进行调试，调试无误后提交即可。
+
+## 快速流程
+
+### 生成新博客
+
+``` bash
+$ hexo new "My New Post"
+```
+
+More info: [Writing](https://hexo.io/docs/writing.html)
+
+### 本地调试运行server
+
+``` bash
+$ hexo server
+$ hexo server --debug (debug 模式)
+```
+
+More info: [Server](https://hexo.io/docs/server.html)
+
+### 生成静态文件
+
+``` bash
+$ hexo generate
+```
+
+More info: [Generating](https://hexo.io/docs/generating.html)
+
+### 部署
+
+``` bash
+$ hexo deploy
+```
+
+More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)

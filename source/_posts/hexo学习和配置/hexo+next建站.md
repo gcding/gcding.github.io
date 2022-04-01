@@ -1,11 +1,13 @@
 ---
-title: 建站记录
+title: hexo + next 建站记录
 date: 2021-11-02 19:53:24
+updated: 2022-04-01
 tags: 
 - hexo
 - next
 categories:
 - 开发
+description: Hexo建站记录，需要提前配置好GitHub，同时对npm和git使用有一定的了解
 comments: true
 ---
 
@@ -56,46 +58,7 @@ $ git push origin "分支名"
 $ git pull origin "分支名"
 ```
 
-- Hexo的安装与使用
-我自己准备尝试修改的Hexo的NexT主题设置：
-[NexT主题官方文档](https://theme-next.iissnan.com/getting-started.html)
-[NexT主题设置-博客1](https://blog.csdn.net/as480133937/article/details/100138838)
-- GitHub部署
-- Hexo部署
-
-
-[self-Attention and Transformer](https://luweikxy.gitbook.io/machine-learning-notes/self-attention-and-transformer#Self-Attention%E6%9C%BA%E5%88%B6)
-
-## Quick Start
-
-### Create a new post
-
-``` bash
-$ hexo new "My New Post"
-```
-
-More info: [Writing](https://hexo.io/docs/writing.html)
-
-### Run server
-
-``` bash
-$ hexo server
-```
-
-More info: [Server](https://hexo.io/docs/server.html)
-
-### Generate static files
-
-``` bash
-$ hexo generate
-```
-
-More info: [Generating](https://hexo.io/docs/generating.html)
-
-### Deploy to remote sites
-
-``` bash
-$ hexo deploy
-```
-
-More info: [Deployment](https://hexo.io/docs/one-command-deployment.html)
+## Next的安装与使用
+我自己的主题很简单，推荐的Hexo的NexT主题设置：
+- [NexT主题官方文档](https://theme-next.iissnan.com/getting-started.html)
+- [NexT主题设置-博客1](https://blog.csdn.net/as480133937/article/details/100138838)
