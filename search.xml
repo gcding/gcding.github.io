@@ -3,15 +3,16 @@
   <entry>
     <title>Git学习</title>
     <url>/2022/04/01/git%E5%AD%A6%E4%B9%A0/git%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容，目录如下：</p>
+    <content><![CDATA[<p>本博文主要包含Git+GitHub单人仓库极简配置方法，Git多人协同开发主要命令，Git高级用法和自己部署一个Git，目录如下：</p>
 <ul>
-<li><a href="#git%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99">Git学习资料</a></li>
+<li><a href="#git%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%95%B4%E7%90%86">Git学习资料整理</a></li>
 <li><a href="#git%E9%85%8D%E7%BD%AE">Git配置</a></li>
 <li><a href="#git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4">Git基础命令</a></li>
 <li><a href="#git%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E4%B8%8Ebranch">Git多人协同开发与branch</a></li>
 <li><a href="#git%E5%B7%A5%E5%85%B7%E9%AB%98%E7%BA%A7">Git工具（高级）</a></li>
-<li><a href="#%E8%87%AA%E5%B7%B1%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AAgit%E9%AB%98%E7%BA%A7">自己部署一个Git（高级）</a><span id="more"></span>
-<h2 id="Git学习资料"><a href="#Git学习资料" class="headerlink" title="Git学习资料"></a>Git学习资料</h2></li>
+<li><a href="#%E8%87%AA%E5%B7%B1%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AAgit%E9%AB%98%E7%BA%A7">自己部署一个Git（高级）</a><span id="more"></span></li>
+</ul>
+<h2 id="Git学习资料整理"><a href="#Git学习资料整理" class="headerlink" title="Git学习资料整理"></a>Git学习资料整理</h2><ul>
 <li>书本资料<ul>
 <li>Git学习资料 <a href="http://iissnan.com/progit/">Pro Git中文版</a></li>
 </ul>
@@ -21,7 +22,34 @@
 </ul>
 </li>
 </ul>
-<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><h2 id="Git基础命令"><a href="#Git基础命令" class="headerlink" title="Git基础命令"></a>Git基础命令</h2><h2 id="Git多人协同开发与branch"><a href="#Git多人协同开发与branch" class="headerlink" title="Git多人协同开发与branch"></a>Git多人协同开发与branch</h2><h2 id="Git工具（高级）"><a href="#Git工具（高级）" class="headerlink" title="Git工具（高级）"></a>Git工具（高级）</h2><h2 id="自己部署一个Git（高级）"><a href="#自己部署一个Git（高级）" class="headerlink" title="自己部署一个Git（高级）"></a>自己部署一个Git（高级）</h2>]]></content>
+<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><p>此时默认Git已经安装完成，可以通过<code>git --version</code>判断是否安装成功。<br>下面以GitHub为例进行Git配置.</p>
+<p><strong>1. 用户信息配置</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name <span class="string">&quot;your_name&quot;</span></span><br><span class="line">$ git config --global user.email email@email.com</span><br></pre></td></tr></table></figure>
+<p>如果用了 <code>--global</code> 选项，那么更改的配置文件就是位于你用户主目录下的那个，以后你所有的项目都会默认使用这里配置的用户信息。如果要在某个特定的项目中使用其他名字或者电邮，只要去掉 <code>--global</code> 选项重新配置即可。</p>
+<p>下面有两个可选择的配置，分别是默认选择的文本编辑器和解决合并冲突时使用哪种差异分析工具。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment">#编辑器，可以用vim</span></span><br><span class="line">$ git config --global core.editor <span class="string">&quot;your_editor&quot;</span>  </span><br><span class="line"><span class="comment">#差异分析工具，可以用vimdiff</span></span><br><span class="line">$ git config --global merge.tool <span class="string">&quot;your_tool&quot;</span>  </span><br><span class="line"><span class="comment"># 查看配置信息</span></span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 配置GitHub</strong></p>
+<ul>
+<li>进入GitHub设置 <a href="https://github.com/settings/keys">key</a>的界面；</li>
+<li>在本地通过 <code>ssh-keygen -t rsa -b 4096 -C &quot;email@email.com&quot;</code> 命令生成key。</li>
+<li>点击 New SSH key，输入你想要的Title，然后将上一步生成的key（保存在<code>~/.ssh/id_rsa.pub</code>路径下）粘贴在key里面</li>
+<li>点击 Add SSH key即可。</li>
+<li>运行 <code>ssh -T git@github.com</code> 如果输出以下内容即配置成功。<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Hi ***! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>下面你就可以愉快地使用Git和GitHub进行代码管理啦！</p>
+<h2 id="Git基础命令"><a href="#Git基础命令" class="headerlink" title="Git基础命令"></a>Git基础命令</h2><p>通过这些基础命令你就可以使用GitHub对你自己的代码进行Git管理，如果需要高级功能可以看 <a href="#git%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E4%B8%8Ebranch">Git多人协同开发与branch</a>，同时对于想要进阶的选手强烈推荐看学习资料中的 <a href="http://iissnan.com/progit/">Pro Git中文版</a>。</p>
+<p>下面开始介绍Git的基础命令。</p>
+<p><strong>1. 创建一个版本库</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 从工作目录中初始化新仓库</span></span><br><span class="line">$ git init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 从git仓库中克隆</span></span><br><span class="line">$ git <span class="built_in">clone</span> [url] [wanted_project_name(option)]</span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 记录更新到仓库</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 检查当前文件状态</span></span><br><span class="line">$ git status</span><br><span class="line"></span><br><span class="line"><span class="comment"># 跟踪并暂存文件</span></span><br><span class="line">$ git add [file_name]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">$ git commit -m [<span class="built_in">stat</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 移除或移动文件</span></span><br><span class="line">$ git rm [file_name]  <span class="comment"># 移除文件</span></span><br><span class="line">$ git mv [file_from] [file_to]  <span class="comment">#移动文件</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交文件</span></span><br><span class="line">$ git push [remote-name] [branch-name]</span><br></pre></td></tr></table></figure>
+
+<p><strong>3. 拉取最新内容到本地</strong><br>强烈建议每次修改本地文件的时候运行此命令。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git pull [remote-name] [branch-name]</span><br></pre></td></tr></table></figure>
+
+<h2 id="Git多人协同开发与branch"><a href="#Git多人协同开发与branch" class="headerlink" title="Git多人协同开发与branch"></a>Git多人协同开发与branch</h2><h2 id="Git工具（高级）"><a href="#Git工具（高级）" class="headerlink" title="Git工具（高级）"></a>Git工具（高级）</h2><h2 id="自己部署一个Git（高级）"><a href="#自己部署一个Git（高级）" class="headerlink" title="自己部署一个Git（高级）"></a>自己部署一个Git（高级）</h2>]]></content>
       <categories>
         <category>开发</category>
       </categories>
