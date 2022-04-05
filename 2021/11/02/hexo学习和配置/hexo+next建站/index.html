@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Hexo第一次尝试使用Hexo建站，感觉还可以，本条博文留着用来记录我在搭建博客过程中的问题，流程预计如下： node + nvm由于有其他使用node的需要，所以使用了nvm管理node版本，本博客使用的是v16.13.0。有关NVM安装和使用主要参考: NVM安装 NVM使用 主要使用的命令如下:  12$ nvm ls (列出本地所有的node的版本)$ nvm use v16.13.0 (">
+<meta name="description" content="Hexo建站记录，需要提前配置好GitHub，同时对npm和git使用有一定的了解">
 <meta property="og:type" content="article">
-<meta property="og:title" content="建站记录">
+<meta property="og:title" content="hexo + next 建站记录">
 <meta property="og:url" content="http://example.com/2021/11/02/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo+next%E5%BB%BA%E7%AB%99/index.html">
 <meta property="og:site_name" content="gcding&#39;s blog">
-<meta property="og:description" content="Hexo第一次尝试使用Hexo建站，感觉还可以，本条博文留着用来记录我在搭建博客过程中的问题，流程预计如下： node + nvm由于有其他使用node的需要，所以使用了nvm管理node版本，本博客使用的是v16.13.0。有关NVM安装和使用主要参考: NVM安装 NVM使用 主要使用的命令如下:  12$ nvm ls (列出本地所有的node的版本)$ nvm use v16.13.0 (">
+<meta property="og:description" content="Hexo建站记录，需要提前配置好GitHub，同时对npm和git使用有一定的了解">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-02T11:53:24.000Z">
-<meta property="article:modified_time" content="2022-04-01T05:20:52.531Z">
+<meta property="article:modified_time" content="2022-03-31T16:00:00.000Z">
 <meta property="article:author" content="Guanchen Ding">
 <meta property="article:tag" content="hexo">
 <meta property="article:tag" content="next">
@@ -39,10 +39,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/11/02/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo+next%E5%BB%BA%E7%AB%99/","path":"2021/11/02/hexo学习和配置/hexo+next建站/","title":"建站记录"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/11/02/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo+next%E5%BB%BA%E7%AB%99/","path":"2021/11/02/hexo学习和配置/hexo+next建站/","title":"hexo + next 建站记录"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>建站记录 | gcding's blog</title>
+<title>hexo + next 建站记录 | gcding's blog</title>
   
 
 
@@ -148,7 +148,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-nvm"><span class="nav-number">1.1.</span> <span class="nav-text">node + nvm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E5%BB%BA%E7%AB%99"><span class="nav-number">1.2.</span> <span class="nav-text">GitHub建站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">2.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">2.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">2.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">2.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">2.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo"><span class="nav-number">1.</span> <span class="nav-text">Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#node-nvm"><span class="nav-number">1.1.</span> <span class="nav-text">node + nvm</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#GitHub%E5%BB%BA%E7%AB%99"><span class="nav-number">1.2.</span> <span class="nav-text">GitHub建站</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8"><span class="nav-number">2.</span> <span class="nav-text">Next的安装与使用</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -161,7 +161,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -235,7 +235,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          建站记录
+          hexo + next 建站记录
         </h1>
 
         <div class="post-meta-container">
@@ -253,7 +253,7 @@
           <i class="far fa-calendar-check"></i>
         </span>
         <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-01 13:20:52" itemprop="dateModified" datetime="2022-04-01T13:20:52+08:00">2022-04-01</time>
+        <time title="修改时间：2022-04-01 00:00:00" itemprop="dateModified" datetime="2022-04-01T00:00:00+08:00">2022-04-01</time>
       </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -271,7 +271,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>893</span>
+      <span>646</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -282,6 +282,7 @@
     </span>
 </div>
 
+            <div class="post-description">Hexo建站记录，需要提前配置好GitHub，同时对npm和git使用有一定的了解</div>
         </div>
       </header>
 
@@ -307,24 +308,11 @@
 <p>每次修改前都要去GitHub上拉取最新的版本</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git pull origin <span class="string">&quot;分支名&quot;</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="Next的安装与使用"><a href="#Next的安装与使用" class="headerlink" title="Next的安装与使用"></a>Next的安装与使用</h2><p>我自己的主题很简单，推荐的Hexo的NexT主题设置：</p>
 <ul>
-<li>Hexo的安装与使用<br>我自己准备尝试修改的Hexo的NexT主题设置：<br><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">NexT主题官方文档</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">NexT主题设置-博客1</a></li>
-<li>GitHub部署</li>
-<li>Hexo部署</li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.iissnan.com/getting-started.html">NexT主题官方文档</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/as480133937/article/details/100138838">NexT主题设置-博客1</a></li>
 </ul>
-<p><a target="_blank" rel="noopener" href="https://luweikxy.gitbook.io/machine-learning-notes/self-attention-and-transformer#Self-Attention%E6%9C%BA%E5%88%B6">self-Attention and Transformer</a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
     </div>
 
@@ -344,8 +332,8 @@
             <div class="post-nav-item">
             </div>
             <div class="post-nav-item">
-                <a href="/2021/11/02/deep-learning/" rel="next" title="deep learning">
-                  deep learning <i class="fa fa-chevron-right"></i>
+                <a href="/2022/04/01/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo%E5%86%99%E5%8D%9A%E5%AE%A2/" rel="next" title="hexo写博客">
+                  hexo写博客 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

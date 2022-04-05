@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>deep learning</title>
-    <url>/2021/11/02/deep-learning/</url>
-    <content><![CDATA[<h2 id="深度学习方面的一些坑与博主的学习过程"><a href="#深度学习方面的一些坑与博主的学习过程" class="headerlink" title="深度学习方面的一些坑与博主的学习过程"></a>深度学习方面的一些坑与博主的学习过程</h2>]]></content>
+    <title>Git学习</title>
+    <url>/2022/04/01/git%E5%AD%A6%E4%B9%A0/git%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<p>本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容，目录如下：</p>
+<ul>
+<li><a href="#git%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99">Git学习资料</a></li>
+<li><a href="#git%E9%85%8D%E7%BD%AE">Git配置</a></li>
+<li><a href="#git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4">Git基础命令</a></li>
+<li><a href="#git%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E4%B8%8Ebranch">Git多人协同开发与branch</a></li>
+<li><a href="#git%E5%B7%A5%E5%85%B7%E9%AB%98%E7%BA%A7">Git工具（高级）</a></li>
+<li><a href="#%E8%87%AA%E5%B7%B1%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AAgit%E9%AB%98%E7%BA%A7">自己部署一个Git（高级）</a><span id="more"></span>
+<h2 id="Git学习资料"><a href="#Git学习资料" class="headerlink" title="Git学习资料"></a>Git学习资料</h2></li>
+<li>书本资料<ul>
+<li>Git学习资料 <a href="http://iissnan.com/progit/">Pro Git中文版</a></li>
+</ul>
+</li>
+<li>网页资料<ul>
+<li>……</li>
+</ul>
+</li>
+</ul>
+<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><h2 id="Git基础命令"><a href="#Git基础命令" class="headerlink" title="Git基础命令"></a>Git基础命令</h2><h2 id="Git多人协同开发与branch"><a href="#Git多人协同开发与branch" class="headerlink" title="Git多人协同开发与branch"></a>Git多人协同开发与branch</h2><h2 id="Git工具（高级）"><a href="#Git工具（高级）" class="headerlink" title="Git工具（高级）"></a>Git工具（高级）</h2><h2 id="自己部署一个Git（高级）"><a href="#自己部署一个Git（高级）" class="headerlink" title="自己部署一个Git（高级）"></a>自己部署一个Git（高级）</h2>]]></content>
+      <categories>
+        <category>开发</category>
+      </categories>
+      <tags>
+        <tag>git</tag>
+      </tags>
   </entry>
   <entry>
-    <title>CrowdCounting</title>
-    <url>/2021/11/02/CrowdCounting/</url>
-    <content><![CDATA[<h1 id="此处应该为目录"><a href="#此处应该为目录" class="headerlink" title="此处应该为目录"></a>此处应该为目录</h1><h2 id="Crowdcounting-论文"><a href="#Crowdcounting-论文" class="headerlink" title="Crowdcounting 论文"></a>Crowdcounting 论文</h2><h2 id="工作？？待定吧"><a href="#工作？？待定吧" class="headerlink" title="工作？？待定吧"></a>工作？？待定吧</h2>]]></content>
-  </entry>
-  <entry>
-    <title>建站记录</title>
+    <title>hexo + next 建站记录</title>
     <url>/2021/11/02/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo+next%E5%BB%BA%E7%AB%99/</url>
     <content><![CDATA[<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>第一次尝试使用Hexo建站，感觉还可以，本条博文留着用来记录我在搭建博客过程中的问题，流程预计如下：</p>
 <h3 id="node-nvm"><a href="#node-nvm" class="headerlink" title="node + nvm"></a>node + nvm</h3><p>由于有其他使用node的需要，所以使用了nvm管理node版本，本博客使用的是v16.13.0。<br>有关NVM安装和使用主要参考:</p>
@@ -31,24 +50,11 @@
 <p>每次修改前都要去GitHub上拉取最新的版本</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git pull origin <span class="string">&quot;分支名&quot;</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="Next的安装与使用"><a href="#Next的安装与使用" class="headerlink" title="Next的安装与使用"></a>Next的安装与使用</h2><p>我自己的主题很简单，推荐的Hexo的NexT主题设置：</p>
 <ul>
-<li>Hexo的安装与使用<br>我自己准备尝试修改的Hexo的NexT主题设置：<br><a href="https://theme-next.iissnan.com/getting-started.html">NexT主题官方文档</a><br><a href="https://blog.csdn.net/as480133937/article/details/100138838">NexT主题设置-博客1</a></li>
-<li>GitHub部署</li>
-<li>Hexo部署</li>
+<li><a href="https://theme-next.iissnan.com/getting-started.html">NexT主题官方文档</a></li>
+<li><a href="https://blog.csdn.net/as480133937/article/details/100138838">NexT主题设置-博客1</a></li>
 </ul>
-<p><a href="https://luweikxy.gitbook.io/machine-learning-notes/self-attention-and-transformer#Self-Attention%E6%9C%BA%E5%88%B6">self-Attention and Transformer</a></p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
         <category>开发</category>
@@ -74,31 +80,24 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
 
 <p>然后按照之前本地调试的方法进行调试，调试无误后提交即可。</p>
+<h2 id="快速流程"><a href="#快速流程" class="headerlink" title="快速流程"></a>快速流程</h2><h3 id="生成新博客"><a href="#生成新博客" class="headerlink" title="生成新博客"></a>生成新博客</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="本地调试运行server"><a href="#本地调试运行server" class="headerlink" title="本地调试运行server"></a>本地调试运行server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br><span class="line">$ hexo server --debug (debug 模式)</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
       <categories>
         <category>开发</category>
       </categories>
       <tags>
         <tag>hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Git学习</title>
-    <url>/2022/04/01/git%E5%AD%A6%E4%B9%A0/git%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<p>本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容</p>
-<ul>
-<li>Git学习资料</li>
-<li>Git重要命令行</li>
-<li>Git重要知识点</li>
-<li>Git多人协同开发与branch</li>
-<li>Git学习资料 <a href="http://iissnan.com/progit/">Pro Git中文版</a></li>
-</ul>
-]]></content>
-      <categories>
-        <category>开发</category>
-      </categories>
-      <tags>
-        <tag>git</tag>
       </tags>
   </entry>
 </search>

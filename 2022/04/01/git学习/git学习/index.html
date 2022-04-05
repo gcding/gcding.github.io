@@ -20,15 +20,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.8.1","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true}}</script><script src="/js/config.js"></script>
-<meta name="description" content="本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容  Git学习资料 Git重要命令行 Git重要知识点 Git多人协同开发与branch Git学习资料 Pro Git中文版">
+<meta name="description" content="本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容，目录如下：  Git学习资料 Git配置 Git基础命令 Git多人协同开发与branch Git工具（高级） 自己部署一个Git（高级）">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git学习">
 <meta property="og:url" content="http://example.com/2022/04/01/git%E5%AD%A6%E4%B9%A0/git%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="gcding&#39;s blog">
-<meta property="og:description" content="本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容  Git学习资料 Git重要命令行 Git重要知识点 Git多人协同开发与branch Git学习资料 Pro Git中文版">
+<meta property="og:description" content="本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容，目录如下：  Git学习资料 Git配置 Git基础命令 Git多人协同开发与branch Git工具（高级） 自己部署一个Git（高级）">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-04-01T03:21:34.000Z">
-<meta property="article:modified_time" content="2022-04-02T03:22:22.000Z">
+<meta property="article:modified_time" content="2022-03-31T16:00:00.000Z">
 <meta property="article:author" content="Guanchen Ding">
 <meta property="article:tag" content="git">
 <meta name="twitter:card" content="summary">
@@ -134,7 +134,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -147,6 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99"><span class="nav-number">1.</span> <span class="nav-text">Git学习资料</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">Git配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4"><span class="nav-number">3.</span> <span class="nav-text">Git基础命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E4%B8%8Ebranch"><span class="nav-number">4.</span> <span class="nav-text">Git多人协同开发与branch</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Git%E5%B7%A5%E5%85%B7%EF%BC%88%E9%AB%98%E7%BA%A7%EF%BC%89"><span class="nav-number">5.</span> <span class="nav-text">Git工具（高级）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%87%AA%E5%B7%B1%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AAGit%EF%BC%88%E9%AB%98%E7%BA%A7%EF%BC%89"><span class="nav-number">6.</span> <span class="nav-text">自己部署一个Git（高级）</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -159,7 +160,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">3</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -243,16 +244,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2022-04-01 11:21:34" itemprop="dateCreated datePublished" datetime="2022-04-01T11:21:34+08:00">2022-04-01</time>
+      <time title="创建时间：2022-04-01 11:21:34 / 修改时间：00:00:00" itemprop="dateCreated datePublished" datetime="2022-04-01T11:21:34+08:00">2022-04-01</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2022-04-02 11:22:22" itemprop="dateModified" datetime="2022-04-02T11:22:22+08:00">2022-04-02</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -269,7 +264,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>87</span>
+      <span>178</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -287,15 +282,25 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容</p>
+        <p>本博文用来总结博主Git学习过程中遇到的坑以及博主认为重要的内容，目录如下：</p>
 <ul>
-<li>Git学习资料</li>
-<li>Git重要命令行</li>
-<li>Git重要知识点</li>
-<li>Git多人协同开发与branch</li>
+<li><a href="#git%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99">Git学习资料</a></li>
+<li><a href="#git%E9%85%8D%E7%BD%AE">Git配置</a></li>
+<li><a href="#git%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4">Git基础命令</a></li>
+<li><a href="#git%E5%A4%9A%E4%BA%BA%E5%8D%8F%E5%90%8C%E5%BC%80%E5%8F%91%E4%B8%8Ebranch">Git多人协同开发与branch</a></li>
+<li><a href="#git%E5%B7%A5%E5%85%B7%E9%AB%98%E7%BA%A7">Git工具（高级）</a></li>
+<li><a href="#%E8%87%AA%E5%B7%B1%E9%83%A8%E7%BD%B2%E4%B8%80%E4%B8%AAgit%E9%AB%98%E7%BA%A7">自己部署一个Git（高级）</a><span id="more"></span>
+<h2 id="Git学习资料"><a href="#Git学习资料" class="headerlink" title="Git学习资料"></a>Git学习资料</h2></li>
+<li>书本资料<ul>
 <li>Git学习资料 <a target="_blank" rel="noopener" href="http://iissnan.com/progit/">Pro Git中文版</a></li>
 </ul>
-
+</li>
+<li>网页资料<ul>
+<li>……</li>
+</ul>
+</li>
+</ul>
+<h2 id="Git配置"><a href="#Git配置" class="headerlink" title="Git配置"></a>Git配置</h2><h2 id="Git基础命令"><a href="#Git基础命令" class="headerlink" title="Git基础命令"></a>Git基础命令</h2><h2 id="Git多人协同开发与branch"><a href="#Git多人协同开发与branch" class="headerlink" title="Git多人协同开发与branch"></a>Git多人协同开发与branch</h2><h2 id="Git工具（高级）"><a href="#Git工具（高级）" class="headerlink" title="Git工具（高级）"></a>Git工具（高级）</h2><h2 id="自己部署一个Git（高级）"><a href="#自己部署一个Git（高级）" class="headerlink" title="自己部署一个Git（高级）"></a>自己部署一个Git（高级）</h2>
     </div>
 
     
@@ -311,14 +316,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/11/02/CrowdCounting/" rel="prev" title="CrowdCounting">
-                  <i class="fa fa-chevron-left"></i> CrowdCounting
+                <a href="/2022/04/01/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo%E5%86%99%E5%8D%9A%E5%AE%A2/" rel="prev" title="hexo写博客">
+                  <i class="fa fa-chevron-left"></i> hexo写博客
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2022/04/01/hexo%E5%AD%A6%E4%B9%A0%E5%92%8C%E9%85%8D%E7%BD%AE/hexo%E5%86%99%E5%8D%9A%E5%AE%A2/" rel="next" title="hexo写博客">
-                  hexo写博客 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
