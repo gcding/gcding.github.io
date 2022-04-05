@@ -91,6 +91,12 @@ $ git mv [file_from] [file_to]  #移动文件
 $ git push [remote-name] [branch-name]
 ```
 
+**3. 拉取最新内容到本地**
+强烈建议每次修改本地文件的时候运行此命令。
+``` bash
+$ git pull [remote-name] [branch-name]
+```
+
   
 
 ## Git多人协同开发与branch
