@@ -49,7 +49,20 @@
 <p><strong>3. 拉取最新内容到本地</strong><br>强烈建议每次修改本地文件的时候运行此命令。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git pull [remote-name] [branch-name]</span><br></pre></td></tr></table></figure>
 
-<h2 id="Git多人协同开发与branch"><a href="#Git多人协同开发与branch" class="headerlink" title="Git多人协同开发与branch"></a>Git多人协同开发与branch</h2><h2 id="Git工具（高级）"><a href="#Git工具（高级）" class="headerlink" title="Git工具（高级）"></a>Git工具（高级）</h2><h2 id="自己部署一个Git（高级）"><a href="#自己部署一个Git（高级）" class="headerlink" title="自己部署一个Git（高级）"></a>自己部署一个Git（高级）</h2>]]></content>
+<h2 id="Git多人协同开发与branch"><a href="#Git多人协同开发与branch" class="headerlink" title="Git多人协同开发与branch"></a>Git多人协同开发与branch</h2><p>以web开发为一个简单的例子去理解git的branch，某公司要给一个web主页新加两个页面，web1和web2，然后现在有2个程序猿去写，分别写这两个页面，这些页面是不相关的（也可以是相关的，这样在合并的时候就需要检查冲突），他们就可以新建两个branch分别是branch1，branch2，这样的话就可以直接在原始主页基础上进行修改，同时不影响主页运行，在测试无误后合并即可。</p>
+<p>下面是分支中常用的一些操作和命令：<br><strong>1. 新建分支和切换</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ git checkout -b [branch_name]</span><br><span class="line"><span class="comment"># 以上命令相当于</span></span><br><span class="line">$ git branch [branch_name]  <span class="comment"># 新建分支</span></span><br><span class="line">$ git checkout [branch_name]  <span class="comment"># 切换分支</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>2. 分支的合并和删除</strong></p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 分支的合并</span></span><br><span class="line">$ git merge [branch_name]</span><br><span class="line"><span class="comment"># 分支的删除</span></span><br><span class="line">$ git branch -d [branch_name]</span><br></pre></td></tr></table></figure>
+
+<p>如果在不同的分支中都修改了同一个文件的同一部分，Git 就无法干净地把两者合到一起。<br>这时候即使merge了，Git 只是作了合并，但没有提交，它会停下来等你解决冲突。<br>可以通过<code>git status</code>查看哪里起了冲突，或者使用图形化界面<code>git mergetool</code>。</p>
+<p><strong>3. 分支的查看</strong><br>通过<code>git branch -v</code>查看各个分支最后一个提交对象的信息。<br>通过<code>git branch --merged</code>查看哪些分支已被并入当前分支。<br>通过<code>git branch --no-merged</code>查看哪些分支尚未合并。</p>
+<p><strong>4. 远程分支</strong><br>通过<code>git fetch origin</code>来同步远程服务器上的数据到本地。<br>通过<code>git push [remote-name] [branch-name]</code>来推送分支到服务器。</p>
+<p><strong>5. 分支的衍合</strong><br>暂时用不到还没学习。</p>
+<h2 id="Git工具（高级）"><a href="#Git工具（高级）" class="headerlink" title="Git工具（高级）"></a>Git工具（高级）</h2><p>暂时用不到还没学习。</p>
+<h2 id="自己部署一个Git（高级）"><a href="#自己部署一个Git（高级）" class="headerlink" title="自己部署一个Git（高级）"></a>自己部署一个Git（高级）</h2><p>暂时用不到还没学习。</p>
+]]></content>
       <categories>
         <category>开发</category>
       </categories>
