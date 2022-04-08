@@ -100,7 +100,43 @@ $ git pull [remote-name] [branch-name]
   
 
 ## Git多人协同开发与branch
+以web开发为一个简单的例子去理解git的branch，某公司要给一个web主页新加两个页面，web1和web2，然后现在有2个程序猿去写，分别写这两个页面，这些页面是不相关的（也可以是相关的，这样在合并的时候就需要检查冲突），他们就可以新建两个branch分别是branch1，branch2，这样的话就可以直接在原始主页基础上进行修改，同时不影响主页运行，在测试无误后合并即可。
+
+下面是分支中常用的一些操作和命令：
+**1. 新建分支和切换**
+``` bash
+$ git checkout -b [branch_name]
+# 以上命令相当于
+$ git branch [branch_name]  # 新建分支
+$ git checkout [branch_name]  # 切换分支
+```
+
+**2. 分支的合并和删除**
+``` bash
+# 分支的合并
+$ git merge [branch_name]
+# 分支的删除
+$ git branch -d [branch_name]
+```
+
+如果在不同的分支中都修改了同一个文件的同一部分，Git 就无法干净地把两者合到一起。
+这时候即使merge了，Git 只是作了合并，但没有提交，它会停下来等你解决冲突。
+可以通过`` git status ``查看哪里起了冲突，或者使用图形化界面`` git mergetool ``。
+
+**3. 分支的查看**
+通过`` git branch -v ``查看各个分支最后一个提交对象的信息。
+通过`` git branch --merged ``查看哪些分支已被并入当前分支。
+通过`` git branch --no-merged ``查看哪些分支尚未合并。
+
+**4. 远程分支**
+通过`` git fetch origin ``来同步远程服务器上的数据到本地。
+通过`` git push [remote-name] [branch-name] ``来推送分支到服务器。
+
+**5. 分支的衍合**
+暂时用不到还没学习。
 
 ## Git工具（高级）
+暂时用不到还没学习。
 
 ## 自己部署一个Git（高级）
+暂时用不到还没学习。
