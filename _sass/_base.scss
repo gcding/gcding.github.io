@@ -252,8 +252,11 @@ blockquote {
 
 .social {
   text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  font-family: monospace;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -270,7 +273,6 @@ blockquote {
     font-size: 0.8rem;
   }
 }
-
 
 // Footer
 footer.fixed-bottom {
