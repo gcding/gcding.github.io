@@ -41,12 +41,188 @@
     pdf       = {paper/CVPRW2022_AICity.pdf},
     selected  = {false},
     abstract  = {Naturalistic driving action recognition plays an important role in understanding drivers' distraction behavior in the traffic environment. The main challenge of this task is the accurate localization of the temporal boundary for each distraction driving behavior in the video. Although many temporal action localization methods can identify action classes, it is difficult to predict accurate temporal boundaries for this task since the driving actions of the same category usually present large intra-class variation. In this paper, we introduce a Coarse-to-Fine Boundary Localization method called CFBL, which obtains fine-grained temporal boundaries progressively through three stages. Concretely, in the first coarse boundary generation stage, we adopt a modified anchor-free model Anchor-Free Saliency-based Detector (AFSD) to make an interval estimation of the temporal boundaries of distraction behavior. In the second boundary refinement stage, we use the Dense Boundary Generation (DBG) model to adjust the estimated interval of the temporal boundaries. In the final boundary decision stage, we build a Localization Boundary Refinement Module to determine the final boundaries of different actions. Besides, we adopt a voting strategy to combine the results of different camera views to enhance the model's distraction driving action classification ability. The experiments conducted on the Track 3 validation set of the 2022 AI City Challenge demonstrate competitive performance of the proposed method.},
-    author    = {Ding, Guanchen* and Han, Wenwei* and Wang, Chenglong* and Cui, Mingpeng and Zhou, Lin and Pan, Dianbo and Wang, Jiayi and Zhang, Junxi and Zhenzhong, Chen},
+    author    = {Ding *, Guanchen and Han *, Wenwei and Wang *, Chenglong and Cui, Mingpeng and Zhou, Lin and Pan, Dianbo and Wang, Jiayi and Zhang, Junxi and Chen, Zhenzhong},
     title     = {A Coarse-To-Fine Boundary Localization Method for Naturalistic Driving Action Recognition},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     month     = {June},
     year      = {2022},
     pages     = {3234-3241}
+}
+
+@inproceedings{Guo_2022_ICPR,
+  abbr      = {ICPR},
+  bibtex_show={true},
+  html      = {https://doi.org/10.1109/ICPR56361.2022.9956153},
+  abstract  = {In this paper, we briefly summarize the first challenge on moving object detection and tracking in satellite videos (SatVideoDT). This challenge has three tracks related to satellite video analysis, including moving object detection (Track 1), single object tracking (Track 2), and multiple-object tracking (Track 3). 123, 89, and 70 participants successfully registered, while 37, 42, and 29 teams submitted their final results on the test datasets for Tracks 1-3, respectively. The top-performing methods and their results in each track are described with details. This challenge establishes a new benchmark for satellite video analysis.},
+  selected  = {false},
+  author    = {Yulan Guo and
+               Qian Yin and
+               Qingyong Hu and
+               Feng Zhang and
+               Chao Xiao and
+               Ye Zhang and
+               Hanyun Wang and
+               Chenguang Dai and
+               Jian Yang and
+               Zhuang Zhou and
+               Weilong Guo and
+               Xiyu Qi and
+               Kelong Tu and
+               Cong Xu and
+               Shudan Zhu and
+               Lai Chen and
+               Bin Lin and
+               Chaocan Xue and
+               Jinlei Zheng and
+               Limei Qin and
+               Ying Li and
+               Manqi Zhao and
+               Lu Ruan and
+               Mingpeng Cui and
+               Guanchen Ding and
+               Guangwei Jiang and
+               Zhenzhong Chen and
+               Yuhan Sun and
+               Kaiyang Cao and
+               Lingyu Kong and
+               Shaodong Chen and
+               Zhicheng Zhao and
+               Qin Shen and
+               Lei Liu and
+               Chenglong Li and
+               Yun Xiao},
+  title     = {The First Challenge on Moving Object Detection and Tracking in Satellite
+               Videos: Methods and Results},
+  booktitle = {26th International Conference on Pattern Recognition, {ICPR} 2022,
+               Montreal, QC, Canada, August 21-25, 2022},
+  pages     = {4981--4988},
+  publisher = {{IEEE}},
+  year      = {2022},
+  doi       = {10.1109/ICPR56361.2022.9956153},
+  timestamp = {Thu, 01 Dec 2022 15:50:19 +0100},
+  biburl    = {https://dblp.org/rec/conf/icpr/GuoYHZXZWDYZGQT22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{Ignatov_2022_ECCVW,
+  abbr      = {ECCVW},
+  bibtex_show={true},
+  html      = {https://doi.org/10.1007/978-3-031-25066-8\_5},
+  selected  = {false},
+  abstract  = {Image super-resolution is a common task on mobile and IoT devices, where one often needs to upscale and enhance low-resolution images and video frames. While numerous solutions have been proposed for this problem in the past, they are usually not compatible with low-power mobile NPUs having many computational and memory constraints. In this Mobile AI challenge, we address this problem and propose the participants to design an efficient quantized image super-resolution solution that can demonstrate a real-time performance on mobile NPUs. The participants were provided with the DIV2K dataset and trained INT8 models to do a high-quality 3X image upscaling. The runtime of all models was evaluated on the Synaptics VS680 Smart Home board with a dedicated edge NPU capable of accelerating quantized neural networks. All proposed solutions are fully compatible with the above NPU, demonstrating an up to 60 FPS rate when reconstructing Full HD resolution images. A detailed description of all models developed in the challenge is provided in this paper.},
+  author    = {Andrey Ignatov and
+               Radu Timofte and
+               Maurizio Denna and
+               Abdel Younes and
+               Ganzorig Gankhuyag and
+               Jingang Huh and
+               Myeong Kyun Kim and
+               Kihwan Yoon and
+               Hyeon{-}Cheol Moon and
+               Seungho Lee and
+               Yoonsik Choe and
+               Jinwoo Jeong and
+               Sungjei Kim and
+               Maciej Smyl and
+               Tomasz Latkowski and
+               Pawel Kubik and
+               Michal Sokolski and
+               Yujie Ma and
+               Jiahao Chao and
+               Zhou Zhou and
+               Hongfan Gao and
+               Zhengfeng Yang and
+               Zhenbing Zeng and
+               Zhengyang Zhuge and
+               Chenghua Li and
+               Dan Zhu and
+               Mengdi Sun and
+               Ran Duan and
+               Yan Gao and
+               Lingshun Kong and
+               Long Sun and
+               Xiang Li and
+               Xingdong Zhang and
+               Jiawei Zhang and
+               Yaqi Wu and
+               Jinshan Pan and
+               Gaocheng Yu and
+               Jin Zhang and
+               Feng Zhang and
+               Zhe Ma and
+               Hongbin Wang and
+               Hojin Cho and
+               Steve Kim and
+               Huaen Li and
+               Yanbo Ma and
+               Ziwei Luo and
+               Youwei Li and
+               Lei Yu and
+               Zhihong Wen and
+               Qi Wu and
+               Haoqiang Fan and
+               Shuaicheng Liu and
+               Lize Zhang and
+               Zhikai Zong and
+               Jeremy Kwon and
+               Junxi Zhang and
+               Mengyuan Li and
+               Nianxiang Fu and
+               Guanchen Ding and
+               Han Zhu and
+               Zhenzhong Chen and
+               Gen Li and
+               Yuanfan Zhang and
+               Lei Sun and
+               Dafeng Zhang and
+               Neo Yang and
+               Fitz Liu and
+               Jerry Zhao and
+               Mustafa Ayazoglu and
+               Bahri Batuhan Bilecen and
+               Shota Hirose and
+               Kasidis Arunruangsirilert and
+               Luo Ao and
+               Ho Chun Leung and
+               Andrew Wei and
+               Jie Liu and
+               Qiang Liu and
+               Dahai Yu and
+               Ao Li and
+               Lei Luo and
+               Ce Zhu and
+               Seongmin Hong and
+               Dongwon Park and
+               Joonhee Lee and
+               Byeong Hyun Lee and
+               Seunggyu Lee and
+               Se Young Chun and
+               Ruiyuan He and
+               Xuhao Jiang and
+               Haihang Ruan and
+               Xinjian Zhang and
+               Jing Liu and
+               Garas Gendy and
+               Nabil Sabor and
+               Jingchao Hou and
+               Guanghui He},
+  editor    = {Leonid Karlinsky and
+               Tomer Michaeli and
+               Ko Nishino},
+  title     = {Efficient and Accurate Quantized Image Super-Resolution on Mobile
+               NPUs, Mobile {AI} {\&} {AIM} 2022 Challenge: Report},
+  booktitle = {Computer Vision - {ECCV} 2022 Workshops - Tel Aviv, Israel, October
+               23-27, 2022, Proceedings, Part {III}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {13803},
+  pages     = {92--129},
+  publisher = {Springer},
+  year      = {2022},
+  url       = {https://doi.org/10.1007/978-3-031-25066-8\_5},
+  doi       = {10.1007/978-3-031-25066-8\_5},
+  timestamp = {Wed, 22 Feb 2023 09:57:53 +0100},
+  biburl    = {https://dblp.org/rec/conf/eccv/IgnatovTDYGHKYMLCJKSLKSMCZGYZZLZSDGKSL22.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 
 @InProceedings{Liu_2021_ICCV,
@@ -56,7 +232,45 @@
     pdf       = {paper/ICCVW2021_VISDrone.pdf},
     selected  = {false},
     abstract  = {Crowding counting research evolves quickly by the leverage of development in deep learning. Many researchers put their efforts into crowd counting tasks and have achieved many significant improvements. However, current datasets still barely satisfy this evolution and high quality evaluation data is urgent. Motivated by high quality and quantity study in crowding counting, we collect a drone-captured dataset formed by 5,468 images(images in RGB and thermal appear in pairs and 2,734 respectively). There are 1,807 pairs of images for training, and 927 pairs for testing. We manually annotate persons with points in each frame. Based on this dataset, we organized the Vision Meets Drone Crowd Counting Challenge(Visdrone-CC2021) in conjunction with the International Conference on Computer Vision (ICCV 2021). Our challenge attracts many researchers to join, which pave the road of speed up the milestone in crowding counting. To summarize the competition, we select the most remarkable algorithms from participants' submissions and provide a detailed analysis of the evaluation results. More information can be found at the website: http://www.aiskyeye.com/.},
-    author    = {Liu, Zhihao and He, Zhijian and Wang, Lujia and Wang, Wenguan and Yuan, Yixuan and Zhang, Dingwen and Zhang, Jinglin and Zhu, Pengfei and Van Gool, Luc and Han, Junwei and Hoi, Steven and Hu, Qinghua and Liu, Ming and Pan, Junwen},
+    author    = {Zhihao Liu and
+               Zhijian He and
+               Lujia Wang and
+               Wenguan Wang and
+               Yixuan Yuan and
+               Dingwen Zhang and
+               Jinglin Zhang and
+               Pengfei Zhu and
+               Luc Van Gool and
+               Junwei Han and
+               Steven C. H. Hoi and
+               Qinghua Hu and
+               Ming Liu and
+               Junwen Pan and
+               Baoqun Yin and
+               Binyu Zhang and
+               Chengxin Liu and
+               Ding Ding and
+               Dingkang Liang and
+               Guanchen Ding and
+               Hao Lu and
+               Hui Lin and
+               Jingyuan Chen and
+               Jiong Li and
+               Liang Liu and
+               Lin Zhou and
+               Min Shi and
+               Qianqian Yang and
+               Qing He and
+               Sifan Peng and
+               Wei Xu and
+               Wenwei Han and
+               Xiang Bai and
+               Xiwu Chen and
+               Yabin Wang and
+               Yinfeng Xia and
+               Yiran Tao and
+               Zhenzhong Chen and
+               Zhiguo Cao},
     title     = {VisDrone-CC2021: The Vision Meets Drone Crowd Counting Challenge Results},
     booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
     month     = {October},
@@ -71,7 +285,7 @@
     pdf       = {paper/CVPRW2021_AICity.pdf},
     selected  = {false},
     abstract  = {Traffic anomaly detection has played a crucial role in Intelligent Transportation System (ITS). The main challenges of this task lie in the highly diversified anomaly scenes and variational lighting conditions. Although much work has managed to identify the anomaly in homogenous weather and scene, few resolved to cope with complex ones. In this paper, we proposed a dual-modality modularized methodology for the robust detection of abnormal vehicles. We introduced an integrated anomaly detection framework comprising the following modules: background modeling, vehicle tracking with detection, mask construction, Region of Interest (ROI) backtracking, and dual-modality tracing. Concretely, we employed background modeling to filter the motion information and left the static information for later vehicle detection. For the vehicle detection and tracking module, we adopted YOLOv5 and multi-scale tracking to localize the anomalies. Besides, we utilized the frame difference and tracking results to identify the road and obtain the mask. In addition, we introduced multiple similarity estimation metrics to refine the anomaly period via backtracking. Finally, we proposed a dual-modality bilateral tracing module to refine the time further. The experiments conducted on the Track 4 testset of the NVIDIA 2021 AI City Challenge yielded a result of 0.9302 F1-Score and 3.4039 root mean square error (RMSE), indicating the effectiveness of our framework.},
-    author    = {Chen, Jingyuan* and Ding, Guanchen* and Yang, Yuchen* and Han, Wenwei and Xu, Kangmin and Gao, Tianyi and Zhang, Zhe and Ouyang, Wanping and Cai, Hao and Zhenzhong, Chen},
+    author    = {Chen *, Jingyuan and Ding *, Guanchen and Yang *, Yuchen and Han, Wenwei and Xu, Kangmin and Gao, Tianyi and Zhang, Zhe and Ouyang, Wanping and Cai, Hao and Chen, Zhenzhong},
     title     = {Dual-Modality Vehicle Anomaly Detection via Bilateral Trajectory Tracing},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
     month     = {June},
@@ -86,7 +300,7 @@
     pdf       = {},
     selected  = {false},
     abstract  = {Car counting on drone-based images is a challenging task in computer vision. Most advanced methods for counting are based on density maps. Usually, density maps are first generated by convolving ground truth point maps with a Gaussian kernel for later model learning (generation). Then, the counting network learns to predict density maps from input images (estimation). Most studies focus on the estimation problem while overlooking the generation problem. In this paper, a training framework is proposed to generate density maps by learning and train generation and estimation subnetworks jointly. Experiments demonstrate that our method outperforms other density map-based methods and shows the best performance on drone-based car counting.},
-    author    = {Huang, Jingxian* and Ding, Guanchen* and Guo, Yujia and Yang, Daiqin and Wang, Sihan and Wang, Tao and Zhang, Yunfei},
+    author    = {Huang *, Jingxian and Ding *, Guanchen and Guo, Yujia and Yang, Daiqin and Wang, Sihan and Wang, Tao and Zhang, Yunfei},
     booktitle = {2020 IEEE International Conference on Visual Communications and Image Processing (VCIP)}, 
     title     = {Drone-Based Car Counting via Density Map Learning}, 
     year      = {2020},

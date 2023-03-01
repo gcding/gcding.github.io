@@ -1,42 +1,18 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
-
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
-
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
-
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
-
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
-
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
-
 "Chen":
   - firstname: ["Changwen"]
     url: https://www4.comp.polyu.edu.hk/~chencw/Home.html
 
-"Chen":
   - firstname: ["Zhenzhong"]
     url: http://iip.whu.edu.cn/
+
+"Yang":
+  - firstname: ["Daiqin"]
+    url: https://rsgis.whu.edu.cn/info/1004/7314.htm
+
+"Zhang":
+  - firstname: ["Yunfei"]
+    url: https://ieeexplore.ieee.org/author/37086883785
+
+"Cui":
+  - firstname: ["Mingpeng"]
+    url: https://dblp.uni-trier.de/pid/327/3258.html
