@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: publications
-description: (*) denotes joint first authorship
-years: [2022, 2021, 2020]
+description: (*) denotes co-first author.
+years: [2024, 2022, 2021, 2020]
 nav: true
 nav_order: 1
 ---

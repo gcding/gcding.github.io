@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Master Student @ Wuhan University
+subtitle: PhD Student @ PolyU
 
 profile:
   align: right
@@ -18,9 +18,9 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm Ding Guanchen(丁冠辰), a third-year master student at [WHU Institute of Artificial Intelligence and Machine Vision](http://iip.whu.edu.cn/) (expect to graduate in 2023) , Wuhan, China, advised by [Prof. Zhenzhong Chen](http://iip.whu.edu.cn/~zzchen/index.html). 
+I'm Ding Guanchen (丁冠辰), a first-year phd student at the Department of Computing, The Hong Kong Polytechnic University, advised by [Prof. Changwen Chen](https://www.polyu.edu.hk/comp/people/academic-staff/prof-chen-changwen/).
 
-**Research:** I mainly work on designing algorithms to address key problems in Crowd/Object counting and Action/Abnormal detection/recognition, such as scale variation in counting, domain gaps in different data sets and abnormal detection in complex scenarios. Now I'm working on Image / Video Processing under the joint supervise of [Prof. Changwen Chen](https://www4.comp.polyu.edu.hk/~chencw/Home.html).
+**Research:** Now I'm working to solve some key problems in communication systems. I also have some experiments in crowd/object counting, action/abnormal detection/recognition and remote sensing image analysis. If you are interested in working with me on related topics, please feel free to connect me via email.
 
-**Previously:** I did my bachelor at [school of Remote Sensing and Information Engineering, Wuhan University](https://rsgis.whu.edu.cn/) and my minor degree at [school of Economics and Management, Wuhan University](http://ems.whu.edu.cn/). 
+**Previously:** I did my Master and Bachelor Degree at [school of Remote Sensing and Information Engineering, Wuhan University](https://rsgis.whu.edu.cn/), advised by [Prof. Zhenzhong Chen](http://iip.whu.edu.cn/~zzchen/index.html). I obtained my minor degree at [school of Economics and Management, Wuhan University](http://ems.whu.edu.cn/). 
 
