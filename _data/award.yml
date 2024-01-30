@@ -13,6 +13,35 @@
       institution: Department of Computing, The HongKong Polytechnic University.
       year: 2022.08 - 2023.02
 
+# - title: Service
+#   type: awards
+#   contents:
+    
+#     - year: Reviewer
+#       items:
+#         - title: Reviewer for TIP
+#         - title:
+#     - year: 2023
+#       items:
+#         - title: TA for DESIGN AND ANALYSIS OF ALGORITHMS (Prof. <a href="https://www.polyu.edu.hk/comp/people/academic-staff/dr-li-bo/"> Bo Li </a>)
+#     - year: 2022
+#       items:
+#         - title: Reviewer for TGRS
+#     - year: 2018
+#       items:
+#         - title: <a href="http://www.ngac.org.cn/competition/"> Geoscientific Data Utilization Competition </a>
+#           description:
+#           - First Prize
+#           - Team Leader
+#         - title: <a href="http://www.apmcm.org/"> APMCM Contest </a>
+#           description:
+#           - First Prize
+#           - Team Leader
+#         - title: <a href="http://gtjdss.shetuan365.cn/portal/gtjdss/index.action"> Internet + Land and Resources Big Data Innovation Application Competition </a>
+#           description:
+#           - First Prize
+#           - Team Member
+
 - title: Honors
   type: time_table
   contents:
