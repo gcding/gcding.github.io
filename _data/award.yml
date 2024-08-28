@@ -45,6 +45,9 @@
 - title: Honors
   type: time_table
   contents:
+    - year: 2023
+      items:
+        - Presidential PhD Fellowship of COMP, PolyU
     - year: 2022
       items: 
         - National scholarship for Postgraduates
