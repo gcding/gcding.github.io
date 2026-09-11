@@ -1,19 +1,66 @@
 ---
 ---
+@article{Pan_2025_TCSVT,
+    abbr        = {TCSVT},
+    bibtex_show = {true},
+    html        = {https://doi.org/10.1109/TCSVT.2025.3614007},
+    selected    = {false},
+    author      = {Xiang Pan and Guanchen Ding and Zhenzhong Chen and Chang Wen Chen},
+    journal     = {IEEE Transactions on Circuits and Systems for Video Technology},
+    title       = {An Efficient Neural Rate Control for {JPEG-AI}},
+    year        = {2025},
+    volume      = {36},
+    number      = {3},
+    pages       = {3917--3922},
+    doi         = {10.1109/TCSVT.2025.3614007}
+}
+
+@article{Liu_2026_ISPRS,
+    abbr        = {ISPRS},
+    bibtex_show = {true},
+    html        = {https://doi.org/10.1016/j.isprsjprs.2026.06.030},
+    code        = {https://github.com/WindermerePeaks/SCOUT-Count},
+    selected    = {false},
+    author      = {Yanhuang Liu* and Guanchen Ding* and Jiayi Wang and Daiqin Yang and Zhenzhong Chen and Chang Wen Chen},
+    journal     = {ISPRS Journal of Photogrammetry and Remote Sensing},
+    title       = {{SCOUT-Count}: Stylization with Covariance-Whitening and Uncertainty for Domain-Generalized Remote Sensing Object Counting},
+    year        = {2026},
+    volume      = {239},
+    pages       = {1063--1078},
+    doi         = {10.1016/j.isprsjprs.2026.06.030},
+    note        = {* Equal contribution; Guanchen Ding is the corresponding author.}
+}
+
+@article{Wang_2025_TGRS,
+    abbr        = {TGRS},
+    bibtex_show = {true},
+    html        = {https://doi.org/10.1109/TGRS.2025.3622599},
+    code        = {https://github.com/jwang-rs/CBD-pytorch},
+    selected    = {false},
+    author      = {Jiayi Wang and Guanchen Ding and Daiqin Yang and Zhenzhong Chen and Chang Wen Chen},
+    journal     = {IEEE Transactions on Geoscience and Remote Sensing},
+    title       = {Counting Beyond Domains: Toward Alignment in Unsupervised Domain Adaptation in Remote Sensing Object Counting},
+    year        = {2025},
+    volume      = {63},
+    pages       = {5648613},
+    doi         = {10.1109/TGRS.2025.3622599}
+}
+
 @inproceedings{Ding_2024_ACMMM,
     abbr      = {ACMMM2024},
     bibtex_show={true},
-    html      = {https://gcding.com/publications/},
+    html      = {https://doi.org/10.1145/3664647.3681310},
+    code      = {https://github.com/gcding/UGSDA-pytorch},
     selected  = {false},
     abstract  = {Waiting for public},
     author    = {Guanchen Ding and Lingbo Liu and Zhenzhong Chen and Changwen Chen},
     booktitle = {Proceedings of ACM International Conference on Multimedia (ACM MM)}, 
-    title     = {Domain-Agnostic Crowd Counting via Uncertainty-Guided Style Diversity Augmentation.}, 
+    title     = {Domain-Agnostic Crowd Counting via Uncertainty-Guided Style Diversity Augmentation},
     year      = {2024},
     volume    = {},
     number    = {},
-    pages     = {},
-    doi       = {}
+    pages     = {1642--1651},
+    doi       = {10.1145/3664647.3681310}
 }
 
 @inproceedings{Ding_2024_ICASSP,
@@ -44,16 +91,17 @@
     abbr      = {TGRS},
     bibtex_show={true},
     html      = {https://doi.org/10.1109/TGRS.2024.3349702},
+    code      = {https://github.com/Ceoilmp/DOPNet},
     selected  = {false},
     abstract  = {Object counting and localization for remote sensing images are effective means to solve large-scale object analysis problems. Nowadays, most counting methods obtain the number of objects by employing convolutional neural network to regress a density map of objects. Even if these leading methods have achieved impressive performances, they simply focus on estimating the number of single-class objects, without providing location information and cannot support multi-class objects. To tackle these problems, a point-based network named Dense Object Prediction Network (DOPNet) is proposed for multi-class object counting and localization for remote sensing images. DOPNet differs from the conventional approach of predicting multiple density maps by incorporating category attributes into the predicted objects, enabling the accurate counting and localization of multi-class objects. Specifically, DOPNet adopts a multi-scale architecture to provide dense predictions of object proposals. A Scale Adaptive Feature Enhancement Module (SAFEM) is designed to predict scales of objects for the suppression of duplicate proposals. Given only point level annotations for training, a pseudo box generation algorithm is designed to find the most suitable pseudo box of each annotated object for the supervision of scale learning. Comprehensive experiments prove that DOPNet can achieve preferable performance on challenging benchmarks of counting while providing object locations. Code and pre-trained models are available at https://github.com/Ceoilmp/DOPNet.},
     author    = {Mingpeng Cui and Guanchen Ding and Daiqin Yang and Zhenzhong Chen},
     journal   = {IEEE Transactions on Geoscience and Remote Sensing}, 
     title     = {DOPNet: Dense Object Prediction Network for Multi-Class Object Counting and Localization in Remote Sensing Images}, 
-    year      = {2023},
-    volume    = {},
+    year      = {2024},
+    volume    = {62},
     number    = {},
-    pages     = {},
-    doi       = {}
+    pages     = {1--15},
+    doi       = {10.1109/TGRS.2024.3349702}
 }
 
 
@@ -93,7 +141,6 @@
     abbr      = {CVPRW},
     bibtex_show={true},
     html      = {https://openaccess.thecvf.com/content/CVPR2022W/AICity/html/Ding_A_Coarse-To-Fine_Boundary_Localization_Method_for_Naturalistic_Driving_Action_Recognition_CVPRW_2022_paper.html},
-    pdf       = {paper/CVPRW2022_AICity.pdf},
     selected  = {false},
     abstract  = {Naturalistic driving action recognition plays an important role in understanding drivers' distraction behavior in the traffic environment. The main challenge of this task is the accurate localization of the temporal boundary for each distraction driving behavior in the video. Although many temporal action localization methods can identify action classes, it is difficult to predict accurate temporal boundaries for this task since the driving actions of the same category usually present large intra-class variation. In this paper, we introduce a Coarse-to-Fine Boundary Localization method called CFBL, which obtains fine-grained temporal boundaries progressively through three stages. Concretely, in the first coarse boundary generation stage, we adopt a modified anchor-free model Anchor-Free Saliency-based Detector (AFSD) to make an interval estimation of the temporal boundaries of distraction behavior. In the second boundary refinement stage, we use the Dense Boundary Generation (DBG) model to adjust the estimated interval of the temporal boundaries. In the final boundary decision stage, we build a Localization Boundary Refinement Module to determine the final boundaries of different actions. Besides, we adopt a voting strategy to combine the results of different camera views to enhance the model's distraction driving action classification ability. The experiments conducted on the Track 3 validation set of the 2022 AI City Challenge demonstrate competitive performance of the proposed method.},
     author    = {Ding *, Guanchen and Han *, Wenwei and Wang *, Chenglong and Cui, Mingpeng and Zhou, Lin and Pan, Dianbo and Wang, Jiayi and Zhang, Junxi and Chen, Zhenzhong},

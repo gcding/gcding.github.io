@@ -6,19 +6,19 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Guanchen
 middle_name: 
 last_name: DING
-email: gcding068@gmail.com
+email: guanchen.ding@connect.polyu.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  Academic homepage of Guanchen Ding, a Ph.D. candidate at The Hong Kong Polytechnic University working on visual semantic communication, neural joint source-channel coding, and reliable visual computing.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
   <a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备2022003824号-1</a>
-keywords:  # add your own keywords or leave empty
+keywords: visual semantic communication, neural joint source-channel coding, generative semantic communication, visual computing, remote sensing
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
-url: https://gcding.github.io # the base hostname & protocol for your site
+url: https://gcding.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -256,8 +256,8 @@ display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Ding]
+  first_name: [Guanchen, G.]
 
   style: apa
   locale: en

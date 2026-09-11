@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Student @ PolyU
+subtitle: Ph.D. Candidate & Presidential Ph.D. Fellow @ PolyU
 
 profile:
   align: right
@@ -18,9 +18,12 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm Ding Guanchen (丁冠辰), a first-year phd student at the Department of Computing, The Hong Kong Polytechnic University, advised by [Prof. Changwen Chen](https://www.polyu.edu.hk/comp/people/academic-staff/prof-chen-changwen/).
+I'm Guanchen Ding (丁冠辰), a Ph.D. candidate and Presidential Ph.D. Fellow in the Department of Computing at The Hong Kong Polytechnic University, supervised by [Prof. Changwen Chen](https://www.polyu.edu.hk/comp/people/academic-staff/prof-chen-changwen/).
 
-**Research:** Now I'm working to solve some key problems in communication systems. I also have some experiments in crowd/object counting, action/abnormal detection/recognition and remote sensing image analysis. If you are interested in working with me on related topics, please feel free to connect me via email.
+**Research:** My research focuses on visual semantic communication under rate and channel constraints, with particular interests in neural joint source-channel coding, generative semantic communication, task-oriented semantic communication.
 
-**Previously:** I did my Master and Bachelor Degree at [school of Remote Sensing and Information Engineering, Wuhan University](https://rsgis.whu.edu.cn/), advised by [Prof. Zhenzhong Chen](http://iip.whu.edu.cn/~zzchen/index.html). I obtained my minor degree at [school of Economics and Management, Wuhan University](http://ems.whu.edu.cn/). 
+<!-- **Research interests:** Semantic and goal-oriented communication; structured visual evidence and dense scene understanding; image/video compression and generative reconstruction; object/crowd counting, remote sensing, domain adaptation, and generalization. -->
 
+**Current work:** I am developing SNR- and bandwidth-adaptive neural JSCC, compact structured evidence for traffic-scene reasoning, and exact-rate progressive JSCC for dense scene understanding. If you are interested in these topics, please feel free to contact me by email.
+
+**Previously:** I received my Master's and Bachelor's degrees from the [School of Remote Sensing and Information Engineering, Wuhan University](https://rsgis.whu.edu.cn/), advised by [Prof. Zhenzhong Chen](https://zhenzhong-chen.github.io/). I also completed a minor degree at the [School of Economics and Management, Wuhan University](http://ems.whu.edu.cn/).
